@@ -7,7 +7,8 @@ font-family: 'Sen', sans-serif;
     margin: 0;
 }
 body{
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;  
+    overflow-x: hidden; 
 }
 .navbar{
     width: 100%;
@@ -144,50 +145,65 @@ outline: none;
 font-weight: bold;
 }
 .movie-list-container{
-    padding: 20px;
+    padding:0 20px;
+}
+.movie-list-wrapper{
+    position: relative;
+ 
 }
 .movie-list{
     display: flex;
     height: 300px;
     align-items: center;
 }
+
+
 .movie-list-item{
-    margin: 15px;
+    margin: 30px;
     position: relative;
     /* transition: all 1s ease-in-out; */
 }
+
 
 .movie-list-item:hover .movie-list-item-img{
 transform: scale(1.2);
 margin: 0 30px;
 opacity: 0.5;
 } 
+.movie-list-item:hover .movie-list-item-title, .movie-list-item:hover .movie-list-item-desc, .movie-list-item:hover .movie-list-item-button{
+opacity: 1
+;
+}
 .movie-list-item-img{
-    width: 250px;
+    width: 227px;
 object-fit: cover;
-    height: 200px;
+    height: 210px;
     transition: all 1s ease-in-out;
 }
 .movie-list-item-title{
     background-color: #333;
     padding: 0 10px;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     position: absolute;
-    top: 10%;
+    top: 5%;
+    border-radius: 10px;
     left: 50px;
 opacity: 0;
+transition: 1s all ease-in-out;
 }
 .movie-list-item-desc{
-        background-color: #333;
-        padding: 10px;
-        font-size: 14px;
-        /* font-weight: bold; */
-        position: absolute;
-        top: 30%;
-        left: 50px;
-    opacity: 0;
-    width: 230px;
+    transition: 1s all ease-in-out;
+background-color: #333;
+padding: 5px;
+font-size: 11px;
+font-weight: bold;
+position: absolute;
+top: 30%;
+left: 50px;
+opacity: 0;
+width: 227px;
+border-radius: 10px;
 }
 .movie-list-item-button{
     padding: 10px;
@@ -198,7 +214,17 @@ opacity: 0;
     border: none;
 cursor: pointer;
 position: absolute;
-bottom: 10px;
+bottom: 7px;
 left: 50px;
 opacity: 0;
+}
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    /* background-color: beige; 
+    */
+    right: 0;
+    color: lightgray;
+    opacity: .5;
 }
