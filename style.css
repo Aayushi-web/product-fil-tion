@@ -86,6 +86,7 @@ position: relative;
     right: 1px;
     border-radius:50% ;
     cursor: pointer;
+    transition: 0.5s ease all;
 }
 .sidebar{
     width: 50px;
@@ -233,4 +234,36 @@ opacity: 0;
     color: lightgray;
     opacity: .5;
     cursor: pointer;
+}
+.container.active{
+    background-color: wheat;
+}
+.movie-list-item-title.active{
+    color: black;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+.nav-container.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.left-menu-icon.active{
+    color: #000;
+}
+.toggle.active{
+    background-color: wheat;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
 }
