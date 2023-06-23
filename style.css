@@ -9,7 +9,7 @@ font-family: 'Sen', sans-serif;
 }
 body{
     font-family: 'Poppins', sans-serif;  
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 .navbar{
     width: 100%;
@@ -150,12 +150,14 @@ font-weight: bold;
 }
 .movie-list-wrapper{
     position: relative;
- 
+ overflow: hidden;
 }
 .movie-list{
     display: flex;
     height: 300px;
     align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out ;
 }
 
 
@@ -228,4 +230,5 @@ opacity: 0;
     right: 0;
     color: lightgray;
     opacity: .5;
+    cursor: pointer;
 }
