@@ -164,6 +164,7 @@ font-weight: bold;
 .movie-list-item{
     margin: 30px;
     position: relative;
+  
     /* transition: all 1s ease-in-out; */
 }
 
@@ -182,6 +183,7 @@ opacity: 1
 object-fit: cover;
     height: 210px;
     transition: all 1s ease-in-out;
+    border-radius:32px;
 }
 .movie-list-item-title{
     background-color: #333;
