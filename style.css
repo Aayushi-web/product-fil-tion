@@ -147,6 +147,11 @@ border-radius: 12px;
 border: none;
 outline: none;
 font-weight: bold;
+cursor: pointer;
+}
+.featured-button:hover{
+    background-color: antiquewhite;
+    color: red;
 }
 .movie-list-container{
     padding:0 20px;
